@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Noto Serif", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.authform{
+    border:1px solid gray ;
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;    
+    border-radius: 10px;
+    position: relative;
+    margin: 200px 400px;
+
+}
+
+.authform label{
+    width: 100%;
+    max-width: 55%;
+    font-weight:600 ;
+
+}
+.authform input{
+    width: 100%;
+    max-width: 55%;
+    height: 2rem;
+    font-size: medium;
+
+}
+ button{
+    background-color: red;
+    width: 6rem;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size:15px ;
+ }
+
+.app {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.board {
+  padding: 10px;
+}
+
+.add-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(69, 69, 241);
+  border: none;
+  color: white;
+  width: auto;
+}
+
+.logoutbtn{
+  display: block;
+  margin-left: auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(241, 103, 69);
+  border: none;
+  color: white;
+
+}
+
+.board-columns {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 30%;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.task-list {
+  min-height: 200px;
+  padding: 20px;
+}
+
+.task-card {
+  background: rgba(255, 255, 255, 0.711);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+.task-form input,
+.task-form select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.task-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .authform{
+    flex-direction: column;
+    margin: 150px 90px;
+  }
+  .board-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
