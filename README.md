@@ -41,7 +41,7 @@ npm run dev
 
 # Live Demo
 
-View Live Demo
+View Live Demo: https://task-management-dash-board-opal.vercel.app/admin
 
 # Login Credentials
 
